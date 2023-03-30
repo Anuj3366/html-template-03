@@ -21,6 +21,23 @@ html{
     overflow-x: hidden;
 }
 
+.btn{
+    display: inline-block;
+    color: #ffffff;
+    background: #333;
+    cursor: pointer;
+    padding: 10px 30px;
+    font-size: 2rem;
+    border-radius: 30px;
+    margin-top: 1rem; 
+}
+
+.btn:hover{
+    background-color: #e84393;
+}
+
+/*======= Header CSS  =========*/
+
  header{
     position: fixed;
     top: 0;
@@ -79,13 +96,124 @@ header .fa-bars{
     display: none;
 }   
 
-/* Mobile devices*/
-@media (max-width:850px){
+/*======= home section css =========*/
+
+section{
+    padding: 2rem 9%;
+}
+.home{
+    background: left;
+}
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(img/flower-01.jpg);
+    background-size: cover;
+}
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color: #333;
+}
+.home .content span{
+    font-size: 3.5rem;
+    color: #e84393;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    color: #626161;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+
+/*======= About section css =========*/
+
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    color: #333;
+    padding: 1rem;
+    margin: 2.5rem 0;
+    background-color: rgba(239, 208, 223, 0.5);
+
+}
+
+.heading  span{
+    color: #e84393;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3 rem;
+}
+
+.about .row .img-container{
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.about .row .img-container img{
+    width: 100%;  
+    border: 1rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    width: 100%;
+    object-fit: cover;
+}
+
+.about .row .img-container h3{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: #333;
+    background-color: #fff;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+
+}
+
+.about .row .content{
+    flex: 1 1 40rem;
+    padding: 20px 40px;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color: #333;
+}
+.about .row .content p{
+    font-size: 1.5rem;
+    color: #8d8a8a;
+}
+
+
+/*======= Mobile devices =========*/
+
+@media (max-width:991px){
     html{
         font-size: 55%;
     }
     header{
         padding: 2rem;
+    }
+
+    section{
+        padding: 2.5rem;
     }
 }
 
@@ -116,6 +244,13 @@ header .fa-bars{
         border: 1rem solid rgba(0,0,0,.1);
         display: block;
     }
+
+    .home .content h3{
+        font-size: 6rem;
+    }
+    .home .content span{
+        font-size: 3rem;
+    }
 }
 
 @media (max-width:450px){
@@ -123,3 +258,14 @@ header .fa-bars{
         font-size: 50%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
