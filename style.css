@@ -74,7 +74,7 @@ html{
 
 header .icons a{
     color: #333;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-left: 1.5rem;
 }
 
@@ -101,9 +101,7 @@ header .fa-bars{
 section{
     padding: 2rem 9%;
 }
-.home{
-    background: left;
-}
+
 .home{
     display: flex;
     align-items: center;
@@ -157,7 +155,7 @@ section{
     gap: 2rem;
     flex-wrap: wrap;
     padding: 2rem 0;
-    padding-bottom: 3 rem;
+    padding-bottom: 3rem;
 }
 
 .about .row .img-container{
@@ -215,6 +213,7 @@ section{
     gap: 1.5rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    margin-top: 5rem;
 }
 
 .icons_container .icons{
@@ -245,10 +244,15 @@ section{
 
 /* Products Section CSS */
 
+section .products{
+    padding: 0px;
+    margin-top: 80px;
+}
 .products .box_container{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+    margin-top: 8rem;
 }
 
 .products .box_container .box{
@@ -257,6 +261,7 @@ section{
     border-radius: .5rem;
     border: 1px solid rgba(0,0,0,.1);
     position: relative;
+    
 }
 
 .products .box_container .box .discount{
@@ -346,7 +351,12 @@ section{
 
 }
 
-/* ==== Customer Review Section CSS ======== */
+/* ==== Customer Review Section CSS ====*/
+
+section .review{
+    padding: 0px;
+    margin-top: 80px;
+}
 
 .box_container .box .user img{
     height: 6rem;
@@ -360,6 +370,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+    margin-bottom: 8rem;
 }
 
 .review .box_container .box{
@@ -368,7 +379,7 @@ section{
     border-radius: .5rem;
     padding: 3rem 1.5rem;
     position: relative;
-    border: 5px solid rgba(0,0,0,.1);
+    border: 2px solid rgba(0,0,0,.1);
 }
 
 .review .box_container .box .stars i{
@@ -376,10 +387,9 @@ section{
     font-size: 2rem;
 }
 
-.review .box_container .box .stars p{
+.review .box_container .box .para{
     color: #999;
-    font-size: 2rem;
-    line-height: 1.5;
+    font-size: 12px;
     padding-top: 2rem;
 }
 
@@ -397,6 +407,7 @@ section{
 .box_container .box .user span{
     font-size: 1.5rem;
     color: #999;
+    
 }
 
 .review .box_container .box .fa-quote-right{
@@ -409,15 +420,21 @@ section{
 
 /*======= contact section css =========*/
 
+section .contact{
+    padding: 0;
+    margin-top: 10rem;
+    
+}
+
 .contact .row{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     gap: 1.5rem;
 }
 
 .contact .row form{
     flex: 1 1 30rem;
-    padding: 2rem 2.5rem;
+    padding: 2rem 2rem;
     box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
     border: .1rem solid rgba(0,0,0,.1);
     background: #fff;
@@ -429,7 +446,7 @@ section{
     flex: 1 1 40rem;
 }
 .contact .row .image img{
-    width: 100%;
+    width: 80%;
     height: 580px;
 }
 
@@ -449,13 +466,65 @@ section{
     border-color: #e84393;
 }
 
-.contact .row form textarea{
+.contact .row form textarea{ 
     height: 15rem;
     resize: none;
 }
 
+/*======= Footer section css =========*/
+
+section .footer{
+    padding: 0;
+    margin-top: 80px;
+}
+
+.footer .footer_container{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+}
+
+.footer .footer_container .box{
+    flex: 1 1 25rem;
+    border: none;
+}
+
+.footer .footer_container .box h3{
+    color: #333;
+    font-size: 1.5rem; 
+    padding: 1rem 0;
+}
+
+.footer .footer_container .box a{
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer .footer_container .box a:hover{
+    color: #e84393;
+    text-decoration: underline;
+}
+
+.footer .footer_container .box img{
+    margin-top: 1rem;
+}
 
 
+.footer .credit{
+    text-align: center;
+    width: 100%;
+    color: #333;
+    margin-top: 60px;
+    font-size: 1.5rem;
+    padding: 25px;
+    border-top: 1px solid rgba(0,0,0,.15);
+}
+
+.footer .credit span{
+    color: #e84393;
+}
 
 
 
@@ -515,6 +584,17 @@ section{
         font-size: 50%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
